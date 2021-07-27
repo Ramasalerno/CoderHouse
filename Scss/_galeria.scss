@@ -1,0 +1,19 @@
+/* GALERIA IMAGENES FLEXBOX */
+
+.contenedor__galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        width: 350px;
+        margin: 10px;
+        padding: 10px;
+        &:hover {
+            transform: scale(1.2, 1.2);
+            transition: 1s;
+        }
+    }
+}
