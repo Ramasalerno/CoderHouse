@@ -8,11 +8,9 @@
 
     h2 {
         text-align: center;
-        color: #FFF;
         margin: 20px;
     }
 }
-
 
 .formulario__contenedor input {
     width: 40%;
@@ -26,7 +24,7 @@
 
 .formulario__contenedor label {
     display: block;
-    color: #FFF;
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -43,7 +41,7 @@
     width: 80%;
     height: 50px;
     margin: 20px 0;
-    background: #333;
+    background: var(--bg-color);
     border-radius: 25px;
     font-size: 20px;
     color: #e9f4fb;

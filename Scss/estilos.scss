@@ -5,6 +5,18 @@
 @import "galeria";
 @import "error404";
 
+:root {
+    --text-color: #FFF;
+    --bg-color: #333;
+}
+
+@mixin textos ($tamano, $fweight) {
+    color: var(--text-color);
+    font-size: $tamano;
+    font-weight: $fweight;
+    text-align: center;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -21,34 +33,25 @@ body {
 /* MODIFICACION ESTILO TEXTOS Y TITULOS  */
 
 p {
-    font-weight: 200;
+    @include textos(15px, 200);
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 20px;
-    color: #FFF;
-    font-size: 15px;
 }
 
 h1 {
-    color: #FFF;
-    font-size: 60px;
-    font-weight: normal;
-    text-align: center;
+    @include textos(60px, normal);
     letter-spacing: 2px;
     font-family: 'Fira Sans', sans-serif;
     margin-top: 10px;
 }
 
 h2 {
-    color: #FFF;
-    font-size: 30px;
-    text-align: center;
+    @include textos(30px, normal)
 }
-
 
 .nosotros p {
     margin: 20px;
 }
-
 
 /*  MODIFICACION DE FOOTER  */
 
@@ -58,7 +61,5 @@ footer {
     padding: 15px;
     border-radius: 50px;
     text-align: center;
-    background-color: #333;
+    background-color: var(--bg-color);
 }
-
-
